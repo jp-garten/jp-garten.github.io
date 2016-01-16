@@ -1,0 +1,50 @@
+/*********************************
+* Backgrounds & Colors & Borders *
+**********************************/
+
+/* Backgrounds */
+
+body { background:url(../images/blue/cidsnet-body-bg.gif) repeat top left; }
+#cidsnet-header-wrapper { background:url(../images/blue/cidsnet-header-bg.png) no-repeat bottom right; }
+#cidsnet-main-wrapper { background:url(../images/blue/cidsnet-main-wrapper-bg.gif) repeat-x top left; }
+#cidsnet-content-wrapper { background:url(../images/blue/cidsnet-content-wrapper-bg.gif) repeat-y top left; }
+#cidsnet-navigation ul li a,
+#cidsnet-navigation ul li a { background:url(../images/blue/cidsnet-navi-bg-sprite.gif) no-repeat 0px 0px; }
+#cidsnet-navigation ul li a:hover,
+#cidsnet-navigation ul li a:active { background:url(../images/blue/cidsnet-navi-bg-sprite.gif) no-repeat 0px -30px; }
+#cidsnet-navigation ul li ul li a,
+#cidsnet-navigation ul li ul li a { background:url(../images/blue/cidsnet-navi-bg-sprite.gif) no-repeat 0px -60px; }
+#cidsnet-navigation ul li ul li a:hover,
+#cidsnet-navigation ul li ul li a:active { background:url(../images/blue/cidsnet-navi-bg-sprite.gif) no-repeat 0px -90px; }
+.cidsnet-content-bg-top-left { background:url(../images/blue/cidsnet-content-top-bg.gif) no-repeat top left; }
+.cidsnet-content-bg-top-right { background:url(../images/blue/cidsnet-content-top-bg.gif) no-repeat top right; }
+.cidsnet-content-bg-bottom-left { background:url(../images/blue/cidsnet-content-bg-bottom.gif) no-repeat top left; }
+.cidsnet-content-bg-bottom-right { background:url(../images/blue/cidsnet-content-bg-bottom.gif) no-repeat top right; }
+.cidsnet-content-bg { background:url(../images/blue/cidsnet-content-bg.gif) repeat-y top left; }
+.cidsnet-content-bg-bottom { background:url(../images/blue/cidsnet-content-bottom-bg.gif) no-repeat top left; }
+#cidsnet-header-wrapper,
+#cidsnet-main-wrapper { background-color:#9EB0D7; }
+#cidsnet-breadcrumb,
+#cidsnet-content { background-color:#fff; }
+
+/* Colors */
+
+a,
+a:visited { color:#343d50; }
+a:hover,
+a:active { color:#5f73a0; }
+#cidsnet-content h2,
+.gstyle .headline a,
+.gstyle a { color:#343d50; }
+#cidsnet-header,
+#cidsnet-navigation,
+#cidsnet-footer,
+#cidsnet-navigation ul li a,
+#cidsnet-footerlinks a { color:#fff; }
+#cidsnet-breadcrumb a,
+#cidsnet-breadcrumb a:visited { color:#343d50; }
+
+/* Borders */ 
+
+hr { border:0px; /* Firefox and Opera */ border-top:solid 1px #ccc; border-bottom:solid 1px #fff; /* IE (page background color!) */ }
+#cidsnet-footerlinks-wrapper { border-top:1px solid #fff; border-bottom:1px solid #fff; }

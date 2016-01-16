@@ -1,0 +1,146 @@
+/*********
+* COMMON *
+**********/
+
+/* General */
+
+html,
+body { height:100.13%; padding:0; margin:0; }
+a,
+a:visited { text-decoration:none; }
+a:hover,
+a:active { text-decoration:underline; }
+a img { border:none; }
+:focus { outline:0; }
+
+/* Equalheight Mods */
+
+.container_12,
+.container_16 { overflow:hidden; position:relative; } /* Fix: make overflow:hidden; work in IE7 */
+.equalheight { padding-bottom:32767px; margin-bottom:-32767px; }
+
+/* Helper classes */
+
+.nodisplay { display:none; }
+.hidden { visibility:hidden; }
+.center { text-align:center; }
+.left { text-align:left; }
+.right { text-align:right; }
+.inline { display:inline; }
+.debug1 { border:1px solid red; }
+.debug2 { background:red; }
+
+/* Conpresso styles */
+
+.more,
+.top,
+.pager { padding-top:10px; padding-bottom:5px; }
+.more,
+.top { display:inline; }
+.more { float:left; }
+.top { float:right; }
+.pager { text-align:center; }
+.pubdate { color:gray; font-size:0.5em; }
+
+/* Overflows */
+
+#cidsnet-header,
+#cidsnet-navigation,
+#cidsnet-footer { overflow:hidden; }
+#cidsnet-content { overflow:auto; }
+
+/******************
+* Template styles *
+*******************/
+
+/* Fonts & Font-sizes */
+
+body { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
+body { font-size:1em; }
+#cidsnet-breadcrumb,
+#cidsnet-breadcrumb a,
+#cidsnet-breadcrumb a:visited { font-size:11px; } /* Needed for correct inline display - em does NOT work here! */
+#cidsnet-header h1 { font-size:2.4em; font-weight:normal; }
+#cidsnet-content,
+#cidsnet-content td { font-size:0.8em; }
+#cidsnet-content h2 { font-size:1.5em; }
+#cidsnet-content h3 { font-size:1.2em; }
+#cidsnet-navigation ul li a { font-size:0.8em; font-weight:bold; }
+#cidsnet-navigation ul li ul li a { font-size:0.7em; font-weight:normal; }
+#cidsnet-footerlinks { font-family: Arial, Helvetica, sans-serif; font-size:0.6em; }
+#cidsnet-footerlinks li ul li a { font-weight:normal; }
+
+/* Layout styles */ 
+
+.cidsnet-content-bg-top,
+.cidsnet-content-bg-bottom,
+.cidsnet-content-bg-top-left,
+.cidsnet-content-bg-top-right,
+.cidsnet-content-bg-bottom-left,
+.cidsnet-content-bg-bottom-right { padding:0; margin:0; height:4px; line-height:4px; font-size:0.01em; }
+#cidsnet-header { height:194px; line-height:194px; }
+#cidsnet-breadcrumb { height:25px; }
+#cidsnet-header h1 { margin-top:0; }
+.cidsnet-content-margin { height:10px; font-size:0.01em; }
+#cidsnet-content { padding-top:24px; padding-right:3px; padding-bottom:16px; }
+#cidsnet-content h2 { padding-top:0px; margin-top:0px; }
+#cidsnet-breadcrumbs ul { padding:0; margin:0; }
+#cidsnet-banner { margin:15px 0px; }
+
+/**********************
+* Navigation & Search *
+***********************/
+
+#cidsnet-navigation ul li { }
+#cidsnet-navigation ul li a:hover { }
+#cidsnet-navigation ul { padding:0; margin:0; }
+#cidsnet-navigation ul li { list-style:none; padding:0; margin:0; }
+
+/* Navigation Level 0 */
+
+#cidsnet-navigation ul { padding-left:10px; }
+#cidsnet-navigation ul li a { display:block; height:23px; line-height:23px; padding-left:10px; padding-bottom:6px; }
+#cidsnet-navigation ul li.active ul { display:block; }
+#cidsnet-navigation ul li ul { display:none; }
+#cidsnet-navigation ul li a:hover,
+#cidsnet-navigation ul li a:active,
+#cidsnet-navigation ul li.active a { }
+#cidsnet-navigation ul li.active ul li a,
+#cidsnet-navigation ul li.active ul li ul li a { /* FIXME  background-image:none; */ }
+
+/* Navigation Level >0 */
+
+#cidsnet-navigation li ul li a { padding-left:30px !important; }
+#cidsnet-navigation ul li ul li a:hover,
+#cidsnet-navigation ul li ul li a:active { }
+#cidsnet-search { display:inline; }
+#content { clear: both; }
+
+/*********
+* Search *
+**********/
+
+#cidsnet-search form { font-size:28px; /* needed for background image */ padding:0; margin:0; }
+.cidsnet-search-bg-left { margin:0; padding:0px 0px 0px 4px; /* top right bottom left */ background:url(../images/red/cidsnet-navi-search-bg.gif) no-repeat bottom left; }
+.cidsnet-search-bg-right { margin:0; padding:0px 4px 0px 0px; /* top right bottom left */ background:url(../images/red/cidsnet-navi-search-bg.gif) no-repeat bottom right; }
+.cidsnet-search-input { border:0; background:transparent; }
+.cidsnet-search-submit { border:0; margin:0; padding:0; background:transparent url(../images/red/cidsnet-navi-search-button-bg.gif) no-repeat center center; height:18px; width:14px; text-indent:-9999px; font-size:0; line-height:0; position:relative; top:-4px; /* IE does NOT like that - see hacks below */ }
+* + html .cidsnet-search-submit { position:relative; top:0px; } /* Hack for IE7 */
+* html .cidsnet-search-submit { position:relative; top:0px; } /* Hack for IE6 */
+
+/***************
+* Footer-links *
+****************/
+
+#cidsnet-footerlinks-wrapper { margin-top:35px; padding-top:5px; padding-bottom:5px; }
+#cidsnet-footerlinks,
+#cidsnet-breadcrumb,
+#cidsnet-breadcrumb span,
+#cidsnet-breadcrumb ul li { float:left; }
+#cidsnet-breadcrumb ul li { list-style-type:square; margin-left:20px; }
+#cidsnet-breadcrumb ul { white-space:nowrap; list-style:none; padding:0; margin:0; }
+#cidsnet-footerlinks ul { padding:0; margin:0; white-space:nowrap; list-style:none; }
+#cidsnet-footerlinks ul li { padding:0; margin:0; white-space:nowrap; float:left; padding-right:5px; }
+#cidsnet-footerlinks li ul li { padding:0; margin:0; float:none; border:none; }
+#cidsnet-footerlinks ul li a { display:block; overflow:hidden; }
+
