@@ -1,0 +1,16 @@
+<!-- Hier sind alle Bilder aufgelistet einmal wie die Datei normalerweise heißt     -->
+<!-- dann gibt es noch Link 1 der ist imgur.com leider macht imgur.com die Bilder   -->
+<!-- kleiner daher gibt es noch Link 2 von files.fm                                 -->
+<!-- Darauf werden die Bilder so gespeichert wie sie aufgenommen wurden.            -->
+<!-- Füge "&view" zu Link 2 hinzu um es im browser zu sehen nicht herunterzuladen   -->
+<!-- Alle Bilder stehen unter der CC BY-NC-SA 3.0 Lizenz!                           -->
+
+<xml>
+    <!-- 2014 -->
+    <pic year="2014" file="2014.09.04-01.jpg" link1="http://i.imgur.com/g8UwEvH.jpg" link2="https://files.fm/down.php?i=fwvhadqg" />
+    <pic year="2014" file="2014.09.04-02.jpg" link1="http://i.imgur.com/Vl4wwjj.jpg" link2="https://files.fm/down.php?i=6b6ttuuh" />
+    
+    <!-- 2016 -->
+    <pic year="2016" file="2016.01.14-01.jpg" link1="http://i.imgur.com/8gVLe4s.jpg" link2="https://files.fm/down.php?i=9zuyd62r" />
+    <pic year="2016" file="2016.01.14-02.jpg" link1="http://i.imgur.com/JO60q6w.jpg" link2="https://files.fm/down.php?i=44mnbzex" />
+</xml>
